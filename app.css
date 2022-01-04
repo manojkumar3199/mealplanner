@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #b7ebe2;
+  --secondary-color: #134f5e;
+  --ternary-color: #7a7b73;
+  --test-color: white;
+  --main-transition: all 500ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "poppins";
+  min-height: calc(100vh - 60px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  height: 60px;
+  min-height: 60px;
+  padding: 0 1rem;
+}
+
+.logo {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: "allan";
+  font-weight: bold;
+  float: left;
+  line-height: 60px;
+}
+
+.headline {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(25vh - 60px);
+  padding: 0 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("./background-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--test-color);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.user-input {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.calories-input {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.diet-input {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-btn > button {
+  padding: 0.7rem 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 30px;
+  transition: var(--main-transition);
+}
+
+.submit-btn > button:hover {
+  background-color: transparent;
+}
+
+.nutrients-box {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.calories {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.meal-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.meal {
+  margin: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image-box {
+  display: block;
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--ternary-color);
+  text-align: center;
+  line-height: 200px;
+}
+
+.meal-description {
+  padding: 1rem;
+}
+
+.meal-description .title {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.meal-description > div {
+  margin: 1rem 0;
+}
+
+.meal-description .recipe-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.meal-description .recipe-btn:hover {
+  background-color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  height: 60px;
+}
+
+@media screen and (max-width: 725px) {
+  .user-input {
+    flex-direction: column;
+  }
+
+  .calories-input {
+    flex-direction: column;
+  }
+
+  .diet-input {
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    height: auto;
+  }
+
+  .logo {
+    float: none;
+    line-height: normal;
+  }
+
+  .headline {
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .quote {
+    height: auto;
+  }
+}
