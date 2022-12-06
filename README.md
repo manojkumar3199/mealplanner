@@ -1,5 +1,7 @@
 # mealplanner
 The automatic meal plan generator web app using spoonacular api.
+# website link
+https://manojkumar3199.github.io/mealplanner/
 # screenshotes
 ![mealApp#1](https://user-images.githubusercontent.com/96646934/205844438-c0b9d230-cf61-47ee-b663-321cf4b31ca9.png)
 ![mealApp#0](https://user-images.githubusercontent.com/96646934/205844467-13dc5cc6-a68f-48e9-aba2-3fd04a95b7aa.png)
