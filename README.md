@@ -1,5 +1,7 @@
 # mealplanner
 The automatic meal plan generator web app using spoonacular api.
+# description
+you can enter your desired daily target calories and diet type based on this it will show you randomly three recipes for your meals.
 # website link
 https://manojkumar3199.github.io/mealplanner/
 # screenshotes
